@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Explicação de Tags HTML</title>
+    <title>Explorando Tags HTML e Propriedades CSS</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -12,19 +12,21 @@
             padding: 0;
             background-color: #f0f0f0;
             color: #333; /* cor do texto padrão */
+            text-align: center; /* centraliza todo o conteúdo */
         }
 
         header {
             background-color: #333;
             color: #fff;
-            text-align: center;
             padding: 10px 0;
+            margin-bottom: 20px;
         }
 
         main {
             max-width: 800px;
-            margin: 20px auto;
+            margin: 0 auto;
             padding: 0 20px;
+            text-align: left; /* alinha o texto dentro do conteúdo principal à esquerda */
         }
 
         section {
@@ -36,19 +38,19 @@
 
         h2 {
             color: #007bff; /* cor azul para títulos */
-            text-align: center; /* centraliza o texto */
-            font-size: 24px; /* tamanho da fonte */
+            font-size: 24px; /* tamanho da fonte dos títulos */
             margin-bottom: 10px;
         }
 
         p {
+            font-size: 16px; /* tamanho da fonte dos parágrafos */
+            margin-bottom: 20px;
             text-align: justify; /* justifica o texto */
-            font-size: 16px; /* tamanho da fonte */
         }
 
         img {
             display: block; /* torna a imagem um bloco para alinhar corretamente */
-            margin: 0 auto; /* centraliza a imagem */
+            margin: 0 auto; /* centraliza a imagem horizontalmente */
             max-width: 100%; /* garante que a imagem não ultrapasse o tamanho do seu contêiner */
             height: auto; /* mantém a proporção da imagem */
         }
@@ -56,30 +58,36 @@
         footer {
             background-color: #333;
             color: #fff;
-            text-align: center;
             padding: 10px 0;
             position: fixed;
             bottom: 0;
             width: 100%;
+            text-align: center;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Explorando Tags HTML</h1>
+        <h1>Explorando Tags HTML e Propriedades CSS</h1>
     </header>
     <main>
         <section>
             <h2>&lt;h&gt; - Títulos</h2>
-            <p>A tag &lt;h&gt; é usada para definir cabeçalhos em HTML. Existem várias variações, como &lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, etc., cada uma representando diferentes níveis de importância.</p>
+            <p>A tag &lt;h&gt; é usada para definir cabeçalhos em HTML. Ela possui várias variações, como &lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, etc., cada uma representando diferentes níveis de importância.</p>
+            <p>O tamanho da fonte dos títulos pode ser ajustado usando a propriedade CSS <strong>font-size</strong>. Por exemplo, <code>font-size: 24px;</code> define um tamanho de fonte maior para <code>&lt;h2&gt;</code>.</p>
         </section>
         <section>
             <h2>&lt;p&gt; - Parágrafos</h2>
-            <p>A tag &lt;p&gt; é usada para definir parágrafos de texto em HTML. É usada para agrupar um bloco de texto.</p>
+            <p>A tag &lt;p&gt; é usada para definir parágrafos de texto em HTML. Ela é essencial para estruturar e organizar o conteúdo textual em um documento web.</p>
+            <p>A propriedade CSS <strong>color</strong> define a cor do texto dentro de parágrafos e outros elementos. Por exemplo, <code>color: #333;</code> define um tom de cinza para o texto.</p>
+            <p>A propriedade CSS <strong>text-align</strong> pode ser usada para alinhar o texto dentro de elementos HTML. Por exemplo, <code>text-align: justify;</code> justifica o texto, enquanto <code>text-align: center;</code> centraliza o texto horizontalmente.</p>
+            <p>A propriedade CSS <strong>font-size</strong> define o tamanho da fonte dos parágrafos. Por exemplo, <code>font-size: 16px;</code> define um tamanho de fonte padrão para os parágrafos.</p>
         </section>
         <section>
             <h2>&lt;img&gt; - Imagens</h2>
-            <p>A tag &lt;img&gt; é usada para incorporar imagens em documentos HTML. Ela não possui uma tag de fechamento e requer atributos como src (para o caminho da imagem) e alt (texto alternativo para acessibilidade).</p>
+            <p>A tag &lt;img&gt; é usada para incorporar imagens em documentos HTML. Ela não possui uma tag de fechamento e requer atributos como <code>src</code> (para o caminho da imagem) e <code>alt</code> (texto alternativo para acessibilidade).</p>
+            <img src="https://via.placeholder.com/400" alt="Exemplo de imagem">
+            <p>Imagens podem ser centralizadas horizontalmente dentro de seu contêiner usando a propriedade CSS <strong>margin</strong> com <code>margin: 0 auto;</code>. Isso ajuda a garantir um layout visualmente equilibrado e esteticamente agradável.</p>
         </section>
     </main>
     <footer>
